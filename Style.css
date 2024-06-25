@@ -1,0 +1,122 @@
+
+
+body {
+    background-color: rgb(167, 130, 162);
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    background-size:cover;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+
+}
+h1{
+    color: aliceblue;
+    align-items: center;
+    width:100%;
+    font-weight :600;
+    text-align:center;
+    padding:4%;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+.box{
+    position: relative;
+    width:450px;
+    height: 550px;
+    background: rgb(109, 4, 88);
+    padding:30px 50px;
+    border-radius: 30px;
+    box-shadow: 25px 25px 75px rbga(0,0,0,0.25)
+    inset 5px 5px 10px rgba(0,0,0,0.5);
+ 
+}
+#inputBx{
+    position:relative;
+    width:100%;
+    border-radius:30px;
+    outline:none;
+    height: 25px;
+    padding:15px 17px;
+}
+.box li{
+    position: relative;
+ 
+    display: flex;
+    align-items: center;
+    background-color: aqua;
+    margin:7px 0 ;  
+    cursor:pointer;
+    min-height: 40px;
+    box-shadow: 5px 5px 7px rgb(240, 79, 208);
+    border-radius : 25px;
+    width: 95px 5px;
+    padding: 6px;
+    offset-distance: 22px;
+   
+}
+.box li i{
+    position: absolute; 
+    display: flex;
+    justify-content: center;
+    left: -40px;
+    width:30px;
+    height:30px;
+    border-radius: 50%;
+    background-color: rgb(242, 21, 21);
+
+}
+.box li i::before
+{
+    content:'';
+    position:absolute;
+    width: 15px;
+    height: 6px;
+    background: white;
+    transform: rotate(45deg);
+
+}
+
+.box li i::after
+{
+    position: absolute;
+    content:'';
+    width: 15px;
+    height:4px;
+    background: white;
+    transform: rotate(-45deg);
+
+}
+.box li::before
+{
+    content:'';
+    position:absolute;
+    right:8px;
+    width: 30px;
+    height: 30px;
+    background: rgb(62, 60, 60);
+    border-radius: 50%;
+}
+
+.box li.done{
+    background:rgb(234, 134, 134);
+}
+#list{
+    position: relative;
+    margin-top: 20px;
+    height:350px;
+    overflow-y: auto;
+    padding-right: 10px;
+
+}
+::-webkit-scrollbar-track
+{
+    box-shadow:inset 0 0 15px rgba(0,0,0,0.5);
+}
+::-webkit-scrollbar{
+    width:5px;
+}
+::-webkit-scrollbar-thumb{
+    background:#fff;
+}
